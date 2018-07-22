@@ -6,3 +6,7 @@ const bot = mineflayer.createBot({
     username: config.username,
     password: config.password
 });
+
+bot.on('connect', function() {
+    console.info('Successfully connected to ' + config.host + ':' + config.port);    
+});
