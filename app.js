@@ -1,5 +1,5 @@
 const mineflayer = require('mineflayer');
-const config = require('config.json');
+const config = require('./config.json');
 const bot = mineflayer.createBot({
     host: config.host,
     port: config.port,
